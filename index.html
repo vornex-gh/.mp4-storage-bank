@@ -24,14 +24,21 @@
   <meta name="twitter:player:stream:content_type" content="video/mp4" />
   <meta property="title" content="Random Videos">
   <style type="text/css">
-    *, body, html, video, source {
+    *, body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     video {
-      width: 100%;
-      height: 100vh;
-      object-fit: fill;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
     }
   </style>
 </head>
