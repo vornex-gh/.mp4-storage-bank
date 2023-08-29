@@ -16,12 +16,12 @@
     .video-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
       margin-top: 20px;
+      justify-content: flex-start; /* Start a new row when needed */
     }
     .video-item {
-      width: 200px;
+      width: calc(25% - 20px); /* Four videos in a row */
       text-align: center;
       padding: 10px;
       border: 1px solid #ffffff;
@@ -68,7 +68,7 @@
         <p>NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30</p>
       </a>
     </div>
-        <div class="video-item">
+    <div class="video-item">
       <a class="video-link" href="chrome_C9fuDpVcD9.mp4" target="_blank">
         <p>im mentally stable</p>
       </a>
