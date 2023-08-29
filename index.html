@@ -14,17 +14,11 @@
       text-align: center;
     }
     .video-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
       margin-top: 20px;
-    }
-    .video-row {
-      display: flex;
-      gap: 20px;
+      max-height: 70vh; /* Set maximum height for scrolling */
+      overflow-y: auto; /* Add vertical scrollbar if content exceeds max height */
     }
     .video-item {
-      flex: 1;
       text-align: center;
       padding: 10px;
       border: 1px solid #ffffff;
@@ -46,41 +40,37 @@
 <body>
   <h1>every now and then i will dump random mp4 files here :) WARNING ⚠ [some files may take very long (minutes) to load as there are many videos hosted, too much requests may cause the website to crash or .mp4 files may become unresponsive, the more .mp4 I upload the more unresponsive this site will get anyways. I made this site for personal use anyways lol I just made it to get to .mp4 faster to send to my friends on discord] ZOOM IN IF YOU'RE ON MOBILE!!</h1>
   <div class="video-list">
-    <div class="video-row">
-      <div class="video-item">
-        <a class="video-link" href="suhitbang.mp4" target="_blank">
-          <p>suh it bang</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a class="video-link" href="wirefraudPunchmade.mp4" target="_blank">
-          <p>wire fraud by punchmade</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a class="video-link" href="DONTANNOUCEMASTURBATION.mp4" target="_blank">
-          <p>dont announce masturbation</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a class="video-link" href="ANNOUNCINGMASTURBATION.mp4" target="_blank">
-          <p>my imminent masturbation</p>
-        </a>
-      </div>
+    <div class="video-item">
+      <a class="video-link" href="suhitbang.mp4" target="_blank">
+        <p>suh it bang</p>
+      </a>
     </div>
-    <div class="video-row">
-      <div class="video-item">
-        <a class="video-link" href="NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30.mp4" target="_blank">
-          <p>NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a class="video-link" href="chrome_C9fuDpVcD9.mp4" target="_blank">
-          <p>im mentally stable</p>
-        </a>
-      </div>
-      <!-- Add more video-item divs for additional videos -->
+    <div class="video-item">
+      <a class="video-link" href="wirefraudPunchmade.mp4" target="_blank">
+        <p>wire fraud by punchmade</p>
+      </a>
     </div>
+    <div class="video-item">
+      <a class="video-link" href="DONTANNOUCEMASTURBATION.mp4" target="_blank">
+        <p>dont announce masturbation</p>
+      </a>
+    </div>
+    <div class="video-item">
+      <a class="video-link" href="ANNOUNCINGMASTURBATION.mp4" target="_blank">
+        <p>my imminent masturbation</p>
+      </a>
+    </div>
+    <div class="video-item">
+      <a class="video-link" href="NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30.mp4" target="_blank">
+        <p>NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30</p>
+      </a>
+    </div>
+    <div class="video-item">
+      <a class="video-link" href="chrome_C9fuDpVcD9.mp4" target="_blank">
+        <p>im mentally stable</p>
+      </a>
+    </div>
+    <!-- Add more video-item divs for additional videos -->
   </div>
 </body>
 </html>
