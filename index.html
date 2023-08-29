@@ -27,15 +27,25 @@
       border: 1px solid #ffffff;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .video-link {
       text-decoration: none;
       color: #ffffff;
-      display: block;
-      white-space: nowrap;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .video-title {
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
       overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
     }
   </style>
   <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/938431947456270357/1128072983467008090/NicePng_play-icon-png_234376.png">
@@ -45,27 +55,27 @@
   <div class="video-list">
     <div class="video-item">
       <a class="video-link" href="suhitbang.mp4" target="_blank">
-        <p>suh it bang</p>
+        <p class="video-title">suh it bang</p>
       </a>
     </div>
     <div class="video-item">
       <a class="video-link" href="wirefraudPunchmade.mp4" target="_blank">
-        <p>wire fraud by punchmade</p>
+        <p class="video-title">wire fraud by punchmade</p>
       </a>
     </div>
     <div class="video-item">
       <a class="video-link" href="DONTANNOUCEMASTURBATION.mp4" target="_blank">
-        <p>dont announce masturbation</p>
+        <p class="video-title">dont announce masturbation</p>
       </a>
     </div>
     <div class="video-item">
       <a class="video-link" href="ANNOUNCINGMASTURBATION.mp4" target="_blank">
-        <p>my imminent masturbation</p>
+        <p class="video-title">my imminent masturbation</p>
       </a>
     </div>
     <div class="video-item">
       <a class="video-link" href="NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30.mp4" target="_blank">
-        <p>NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30</p>
+        <p class="video-title">NEVER_BACK_DOWN_NEVER_GIVE_UP___Nick_Eh_30</p>
       </a>
     </div>
     <!-- Add more video-item divs for additional videos -->
