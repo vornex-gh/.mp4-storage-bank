@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Video • vornexx</title>
+  <title>Random videos • vornexx</title>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <link rel="canonical" href="index.html" />
   <meta property="og:url" content="index.html">
-  <meta property="og:video" content="suhitbang.mp4" />
-  <meta property="og:video:secure_url" content="suhitbang.mp4">
-  <meta property="og:video:width" content="896" />
-  <meta property="og:video:height" content="504" />
-  <meta property="og:video:type" content="video/mp4" />
   <meta property="og:type" content="video.other">
-  <meta property="og:image" content="tias_thumb.jpg">
   <meta property="fb:app_id" content="682182938969426">
   <meta name="twitter:site" content="@vornex_43">
   <meta name="twitter:domain" content="vornexxvids.vercel.app">
   <meta name="twitter:card" content="player" />
-  <meta name="twitter:image" content="tias_thumb.jpg">
-  <meta name="twitter:player" content="wirefraudPunchmade.mp4" />
-  <meta name="twitter:player:width" content="896" />
-  <meta name="twitter:player:height" content="504" />
-  <meta name="twitter:player:stream" content="suhitbang.mp4" />
-  <meta name="twitter:player:stream:content_type" content="video/mp4" />
-  <meta property="title" content="Video • vornexx">
+  <meta property="title" content="Video Gallery • vornexx">
   <style type="text/css">
     *, body, html {
       margin: 0;
@@ -30,14 +18,22 @@
       height: 100%;
     }
     body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background-color: #111111;
+    }
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .video-item {
+      margin: 10px;
+      max-width: calc(33.33% - 20px);
+      flex: 1 0 auto;
     }
     video {
       max-width: 100%;
-      max-height: 100%;
       width: auto;
       height: auto;
     }
@@ -45,8 +41,23 @@
   <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/938431947456270357/1128072983467008090/NicePng_play-icon-png_234376.png">
 </head>
 <body>
-  <video controls autoplay loop> 
-    <source src="suhitbang.mp4" type="video/mp4">
-  </video>
+  <div class="video-container">
+    <div class="video-item">
+      <video controls>
+        <source src="suhitbang.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="second_video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="third_video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- Add more video-item divs for additional videos -->
+  </div>
 </body>
 </html>
