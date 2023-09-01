@@ -6,9 +6,12 @@
   <style type="text/css">
     body {
       font-family: Arial, sans-serif;
-      background-color: #111111;
+      background-image: url('background-image.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-blur: 5px; /* Apply blur effect */
       color: #ffffff;
       padding: 20px;
+      margin: 0;
     }
     h1 {
       text-align: center;
@@ -23,6 +26,11 @@
       border: 1px solid #ffffff;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.1);
+      margin: 10px 0;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .video-item:hover {
+      background-color: rgba(255, 255, 255, 0.3); /* Darken background on hover */
     }
     .video-link {
       text-decoration: none;
