@@ -4,7 +4,7 @@
   <title>mp4 storage bank • vornexx</title>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <style type="text/css">
-        body {
+    body {
       font-family: Arial, sans-serif;
       background-color: #111111;
       color: #ffffff;
@@ -16,6 +16,7 @@
     .video-list {
       margin-top: 20px;
       max-height: 70vh; /* Set maximum height for scrolling */
+      overflow-y: auto;
     }
     .video-item {
       text-align: center;
@@ -23,6 +24,7 @@
       border: 1px solid #ffffff;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 10px;
     }
     .video-link {
       text-decoration: none;
@@ -33,43 +35,43 @@
       text-overflow: ellipsis;
       max-width: 100%;
     }
-      }
 
-/* Center the search box */
-.search-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    /* Center the search box */
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-/* Style the search input */
-#searchInput {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  width: 70%;
-  max-width: 400px;
-  font-size: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    /* Style the search input */
+    #searchInput {
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      width: 70%;
+      max-width: 400px;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Custom scrollbars with dark, fancy style */
+    /* Custom scrollbars with dark, fancy style */
     .video-list::-webkit-scrollbar {
       width: 8px;
     }
-  
+
     .video-list::-webkit-scrollbar-track {
       background: rgba(0, 0, 0, 0.1);
     }
-  
+
     .video-list::-webkit-scrollbar-thumb {
       background-color: rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       border: 2px solid rgba(0, 0, 0, 0.1);
     }
-  
+
     .video-list::-webkit-scrollbar-thumb:hover {
       background-color: rgba(255, 255, 255, 0.5);
     }
+
     /* Position the page selection controls at the bottom */
     .page-selection {
       position: fixed;
@@ -84,13 +86,15 @@
   <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/938431947456270357/1128072983467008090/NicePng_play-icon-png_234376.png">
 </head>
 <body>
-  <h1>every now and then i will dump random mp4 files here :) WARNING ⚠ [some files may take very long (minutes) to load as there are many videos hosted, too much requests may cause the website to crash or .mp4 files may become unresponsive, the more .mp4 I upload the more unresponsive this site will get anyways. I made this site for personal use anyways lol I just made it to get to .mp4 faster to send to my friends on discord] ZOOM IN IF YOU'RE ON MOBILE!!</h1>
+  <h1>every now and then I will dump random mp4 files here :). WARNING ⚠ [some files may take a very long time (minutes) to load as there are many videos hosted; too many requests may cause the website to crash, or .mp4 files may become unresponsive. The more .mp4 I upload, the more unresponsive this site will get. Anyway, I made this site for personal use, lol. I just made it to get to .mp4 files faster to send to my friends on Discord. ZOOM IN IF YOU'RE ON MOBILE!!</h1>
   
   <!-- Add the search bar -->
-  <input type="text" id="searchInput" placeholder="Search videos">
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search videos">
+  </div>
   
   <!-- Create multiple pages -->
-  <div id="page1" style="display: block;">
+  <div id="page1">
     <h2>Page 1</h2>
     <div class="video-list">
           <div class="video-item">
@@ -394,49 +398,10 @@
   <div id="page2" style="display: none;">
     <h2>Page 2</h2>
     <div class="video-list">
-      <div class="video-item">
-      <a class="video-link" href="racecarsdontneedheadlights.mp4" target="_blank">
-        <p>the track is always lit</p>
-      </a>
+      <!-- Add your video items here for Page 2 -->
     </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="edging.mp4" target="_blank">
-        <p>MISS RAKHEEEEEEEEEEEE 🔥🔥🔥💦💦</p>
-      </a>
-    </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="idiots.mp4" target="_blank">
-        <p>atlas_users</p>
-      </a>
-    </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="astonmartinvalkyrie.mp4" target="_blank">
-        <p>i am in love💕💕😍</p>
-      </a>
-    </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="allmahfellas.mp4" target="_blank">
-        <p>ALL MY FELLAS 🗣🗣</p>
-      </a>
-    </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="ok.mp4" target="_blank">
-        <p>ok..</p>
-      </a>
-    </div>
-    </div>
-    <div class="video-item">
-      <a class="video-link" href="theholyCLKGTR.mp4" target="_blank">
-        <p>long live the clk gtr</p>
-      </a>
-    </div>
-   <!-- Add more video-item divs for additional videos -->
   </div>
+  
   <!-- Page selection controls at the bottom -->
   <div class="page-selection">
     <button onclick="changePage('prev')">Previous</button>
