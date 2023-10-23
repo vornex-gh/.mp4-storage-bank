@@ -416,29 +416,21 @@
         <p>long live the clk gtr</p>
       </a>
     </div>
-
    <!-- Add more video-item divs for additional videos -->
-  </div>
-    </div>
-  </div>
-  <!-- Page selection controls at the bottom -->
-  <div class="page-selection">
-    <button onclick="changePage('prev')">Previous</button>
-    Page <input type="number" id="pageNum" min="1" max="100" value="1">
-    <button onclick="changePage('next')">Next</button>
   </div>
 
   <script>
     // Get references to the input and video list elements
     const searchInput = document.getElementById("searchInput");
-    const pageNumInput = document.getElementById("pageNum");
-    const pages = document.querySelectorAll('[id^="page"]');
-    let currentPage = 1;
+    const videoList = document.getElementById("videoList");
+
+    // Add an event listener to the search input
+    searchInput.addEventListener("input", filterVideos);
 
     // Function to filter videos based on user input
     function filterVideos() {
       const searchTerm = searchInput.value.toLowerCase();
-      const videoItems = document.querySelectorAll(".video-list .video-item");
+      const videoItems = videoList.getElementsByClassName("video-item");
 
       for (const item of videoItems) {
         const videoLink = item.querySelector(".video-link");
@@ -451,30 +443,6 @@
         }
       }
     }
-
-    // Function to change the current page
-    function changePage(direction) {
-      const newPage = direction === 'next' ? currentPage + 1 : currentPage - 1;
-      if (newPage >= 1 && newPage <= pages.length) {
-        pages[currentPage - 1].style.display = "none";
-        pages[newPage - 1].style.display = "block";
-        pageNumInput.value = newPage;
-        currentPage = newPage;
-      }
-    }
-
-    // Update page when the user types in a page number
-    pageNumInput.addEventListener("input", function () {
-      const page = parseInt(pageNumInput.value);
-      if (page >= 1 && page <= pages.length) {
-        pages[currentPage - 1].style.display = "none";
-        pages[page - 1].style.display = "block";
-        currentPage = page;
-      }
-    });
-
-    // Initial setup
-    searchInput.addEventListener("input", filterVideos);
   </script>
 </body>
 </html>
