@@ -4,7 +4,72 @@
   <title>mp4 storage bank • vornexx</title>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <style type="text/css">
-    /* Your existing CSS styles here */
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #111111;
+      color: #ffffff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .video-list {
+      margin-top: 20px;
+      max-height: 70vh; /* Set maximum height for scrolling */
+    }
+    .video-item {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .video-link {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+      }
+
+/* Center the search box */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the search input */
+#searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+  max-width: 400px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+        /* Custom scrollbars with dark, fancy style */
+    .video-list::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    .video-list::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  
+    .video-list::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .video-list::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
   </style>
   <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/938431947456270357/1128072983467008090/NicePng_play-icon-png_234376.png">
 </head>
